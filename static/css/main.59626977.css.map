@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.59626977.css","mappings":"AAAA,KACE,wBACF,CACA,kBACE,wBAAyB,CACzB,8BACF","sources":["App.css"],"sourcesContent":["body{\n  background-color: rgb(202, 232, 233);\n}\n#weatherContainer{\n  background-color: #95d4ec;\n  box-shadow: 5px 5px 5px rgb(108, 140, 151);\n}"],"names":[],"sourceRoot":""}
