@@ -30,7 +30,12 @@ function Weather() {
     return (
         <>
             <div className="card w-50 border border-0 rounded mx-auto mt-3" id='weatherContainer'>
-                <input type="text" className="form-control w-50 mx-auto border border-dark rounded-pill mt-5" placeholder='search' value={searchCity} onChange={(event) => setSearchCity(event.target.value)} onBlur={() => setCityNames()} />
+
+                <div className="d-flex justify-content-between">
+                    <input type="text" className="form-control w-50 mx-auto border border-dark rounded-pill mt-5" placeholder='Enter city name' value={searchCity} onChange={(event) => setSearchCity(event.target.value)} />
+                    <button type="button" className="btn text-white bg-secondary btn-sm border border-0" onClick={() => setCityNames()}>Search</button>
+                </div>
+
                 {cityName === "" ? <div className="container fs-1 fw-bolder text-center mt-5">No Data Found</div> :
                     <>
                         <div className=" d-flex mt-5 mx-auto">
@@ -41,8 +46,7 @@ function Weather() {
                         <p className='mx-auto'>Min : {minTemp} | Max : {maxTemp}</p>
 
                     </>}
-              
-                  <img src="weather.gif"className='img-fluid border  border-0 ' alt="" />
+                <img src="weather.jpg" alt="" className="img-fluid"/>
             </div>
         </>
     )
